@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:400,500,600');
+
 body, html {
   margin: 0;
   padding: 0;
   text-align: center;
   height: 100%;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Fira Sans Condensed', sans-serif;
   color: #FFFFFF;
   background-color: #000000;
+  font-size: 16px;
 }
 
 header {
@@ -23,13 +26,18 @@ img {
 }
 
 a {
-  color: #FFFFFF;
+  color: #000000;
   text-decoration: none;
 }
 
-.social-icons {
+.icons {
   font-size: 20px;
   margin-top: 5%;
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .social-icons a {
@@ -41,7 +49,7 @@ a {
 }
 
 .videoContainer {
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -59,6 +67,76 @@ a {
 	width: 100%;
 	height: 100%;
 }
+
+.buy-now {
+  margin: 5% 0;
+}
+
+.buy-now a {
+  border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 25px 80px;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    color: #fff;
+    background: #2e509b;
+    border: 2px dashed #FFFFFF;
+    border-radius: 60px;
+}
+
+.buy-now a:hover {
+  background: #000000;
+  color: #226fbe;
+  text-decoration: none;
+}
+
+.carousel-indicators {
+    bottom: 0px;
+    margin-bottom: 0;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+.drm-text {
+  margin-top: 0.9em;
+  font-size: 14px;
+  color: #000000;
+  line-height: 14px;
+}
+
+section {
+  margin-top: 10%;
+}
+
+#available-now p {
+  font-size: 20px;
+}
+
 
 @media screen and (max-width: 768px)
  {
